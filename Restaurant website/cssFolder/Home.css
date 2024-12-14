@@ -1,0 +1,287 @@
+/* remove all spacese around */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .container, .footer-container {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+
+.container-fluid a img{
+    margin-right: 30%;
+    width: 70%;
+    height: 50%;
+}
+/* //////////// */
+body{
+    background-color: #f2efeb;
+    margin: 0;
+}
+
+  
+.bg-body-tertiary {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    --bs-bg-opacity: 0;
+    background-color: rgb(165 146 115) !important;
+    margin-bottom: 6px;
+    box-shadow: 0 0 30px #000000;
+}
+
+
+
+.NavAlign{
+    justify-content: end;
+}
+
+.NavAlign ul li {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 1px;
+    margin: 20px;
+    transition: 0.9s;
+}
+.NavAlign ul li:hover{
+    font-size: 25px;
+    
+}
+
+.NavAlign ul li a:hover{
+    color: #f3e3ca !important;
+}
+
+.carousel-item img {
+    
+    width: 100vw; 
+    height: 77vh; 
+    object-fit:cover; 
+    background-color: black;
+    margin-top: 153px;
+  }
+  .carouselSlider{
+    transition: transform 0.9s ease-in-out, opacity 0.9s ease-in-out;
+  }
+
+  
+  h1{
+    margin-top: 50px;
+    display: flex;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 0 1px 10px rgb(0, 0, 0);
+    transition: 1s;
+    justify-content: center;
+    
+  }
+  h1:hover{
+    font-size: 16px;
+    color: #492e0a;
+  }
+  
+  .restaurant-intro {
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+   .restaurant-intro h1 {
+    margin-top: 20px;
+    font-size: 14px; 
+    line-height: 1.2;
+    margin-bottom: 1em;
+    justify-content: center;
+    transition: 1s;
+  }
+
+  .restaurant-intro h1:hover{
+    font-size: 16px;
+    color: #492e0a;
+  }
+
+  .restaurant-intro img {
+    width: 90%;
+    height: auto;
+    max-height: 80vh;
+  }
+ 
+  
+  .card {
+    margin: 10px;
+  }
+
+  .card-img-top {
+    height: 327px;
+    object-fit: cover;
+    box-shadow: 0 0 30px #000000;
+} 
+  
+  
+ 
+
+  .cardBack{
+    background-color: #a58858;
+    box-shadow: 0 0 30px #000000;
+  }
+  .cardBack h5,p{
+    font-weight: bold;
+  }
+  .cardBack a{
+    color: rgb(255, 255, 255);
+    background-color: #492e0a;
+    transition: 0.5s;
+    
+  }
+  .cardBack a:hover{
+    background-color: #000000;
+    color: white;
+    font-size: large;
+    border-radius: 20px;
+  }
+
+
+
+  footer {
+    position: relative;
+    background-color: #1e1d1d;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; 
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px; 
+}
+
+.footer-section {
+    margin: 10px;
+    flex: 1; 
+    min-width: 200px; 
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffdab9; 
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 132px;
+    text-align: left;
+    padding-top: 14px;
+    
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    transition: color 0.5s, font-size 0.5s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffdab9; 
+    font-size: 18px;
+}
+
+.footer-section p {
+    margin: 0;
+    font-size: 16px;
+    color: #f3e3c9;
+}
+
+.footer-section img {
+    max-width: 100%; 
+    height: auto;
+    margin: auto;
+    margin-left: 46px;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 1024px) {
+  .offers{
+    margin-left: 80px;
+  }
+}
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; 
+        align-items: center; 
+        
+    }
+    .offers{
+      margin-left: 20px;
+    }
+
+    .footer-section {
+        text-align: center; 
+    }
+
+    .footer-section ul {
+        display: block; 
+        text-align: center;
+        margin-right: 110px;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 1px;
+    }
+    .footer-section img{
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 15px 5px; 
+    }
+   
+
+    .footer-section h3 {
+        font-size: 18px;
+    }
+
+    .footer-section p {
+        font-size: 14px; 
+    }
+    
+    
+}
